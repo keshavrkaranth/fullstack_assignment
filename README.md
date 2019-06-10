@@ -1,5 +1,5 @@
 # fullstack_assignment
-Thank you for interest in the position and congratulations for making it through the first stage of resume screening.
+Thank you for your interest in the position and congratulations for making it through the first stage of resume screening.
 As part of your further evaluation process, kindly complete the assignment described below. 
 - The assignment must be completed in a fork of this repo. Once you have completed, submit a PR which will notify us that you are ready for us to review your work.
 - Feel free to reach out (utkarsh@hrrealvalue.com) in case of any issues or concerns, even if you are simply facing difficulty completing the assignment. Effective communication is an important skill.
