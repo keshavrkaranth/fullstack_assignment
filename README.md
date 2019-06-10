@@ -9,7 +9,7 @@ The assignment consists of mainly two parts -
 - Building APIs
 - Consuming APIs
 
-### 1. Building APIs
+## 1. Building APIs
 You are free to use any language and framework along with any database of your choice as long as the APIs cover the following bare minimum - 
 - User authentication
 - A table consisting of restaurant details (id, name, address); another table containing dishes (id, name, thumbnail path); and a final table restuarant dish mapping (restuarant_id, dish_id)
@@ -17,7 +17,7 @@ Points to note -
 - Bonus points for using PHP, Laravel, MySQL stack
 - If you do not have much experience building APIs, you should take a look at LoopBack (Google it!) which will have you up and running in about 10 minutes with user authentication built-in.
 
-### 2. Consuming APIs
+## 2. Consuming APIs
 Create a __responsive__ web client which shows listing of restaurants (after fetching restaurants via the API) and on clicking a restaurant, shows the dishes that particular restaurant serves. For authentication, create a login and singup page as well and appropriately consume the auth APIs here.
 Points to note -
 - There is a lot of creative freedom here which has been given to not limit the thinking of the applicant and to provide room for flexibility. Use it to your advantage.
