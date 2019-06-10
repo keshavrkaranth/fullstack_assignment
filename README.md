@@ -13,6 +13,7 @@ The assignment consists of mainly two parts -
 You are free to use any language and framework along with any database of your choice as long as the APIs cover the following bare minimum - 
 - User authentication
 - A table consisting of restaurant details (id, name, address); another table containing dishes (id, name, thumbnail path); and a final table restuarant dish mapping (restuarant_id, dish_id)
+
 Points to note -
 - Bonus points for using PHP, Laravel, MySQL stack
 - If you do not have much experience building APIs, you should take a look at LoopBack (Google it!) which will have you up and running in about 10 minutes with user authentication built-in.
