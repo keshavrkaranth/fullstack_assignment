@@ -3,7 +3,7 @@
 - The assignment must be completed in a fork of this repo. Once you have completed, submit a PR which will notify us that you are ready for us to review your work.
 - Feel free to reach out (utkarsh@hrrealvalue.com) in case of any issues or concerns, even if you are simply facing difficulty completing the assignment. Effective communication is an important skill.
 - Googling is yet another very useful skill, use it wherever you get stuck.
-- There is no hard-and-fast time limit on completing this assignment, you are expected to send in your submission as soon as you are done. __Just make sure it is submitted before the deadline conveyed in the message in which you the link to this assignment.__
+- There is no hard-and-fast time limit on completing this assignment, you are expected to send in your submission as soon as you are done. __Just make sure it is submitted before the deadline conveyed in the message in which you received the link to this assignment.__
 
 The assignment consists of mainly two parts - 
 - Building APIs
