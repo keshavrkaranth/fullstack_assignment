@@ -22,3 +22,6 @@ Create a __responsive__ web client which shows listing of restaurants (after fet
 Points to note -
 - There is a lot of creative freedom here which has been given to not limit the thinking of the applicant and to provide room for flexibility. Use it to your advantage.
 - Bonus points for using any framework such as Angular or Vue.
+
+## Other Important points
+Please include detailed instructions to run the app, including dependencies list and installation guidelines. It would be terrific if you are able to deploy it (perhaps using Heroku or GCP free $300 credits) and include a link to the hosted app. Comment your code wherever required.
