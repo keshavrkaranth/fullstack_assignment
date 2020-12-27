@@ -24,3 +24,10 @@ class registrationForm(forms.Form):
             raise forms.ValidationError(
                 "password and confirm_password does not match"
             )
+
+
+class loginForm(forms.Form):
+    username = forms.CharField(
+        widget=forms.TextInput(attrs={'class': 'form-control'}))
+    password = forms.CharField(
+        widget=forms.PasswordInput(attrs={'class': 'form-control'}))

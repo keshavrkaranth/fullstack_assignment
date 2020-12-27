@@ -3,16 +3,16 @@
 
 <div class="container">
     <div class="row">
-
-        <div class="col-sm-6">
+        <div class="col-sm-4">
+            {%if msg%}
+            {{msg}}
+            {%endif%}
             <form method="POST">
                 {%csrf_token%}
                 {{form.as_p}}
-                <center><input type="submit" value="Signup"></center>
+                <center><input type="submit" value="Login"></center>
             </form>
         </div>
-
     </div>
 </div>
-
 {%endblock%}
