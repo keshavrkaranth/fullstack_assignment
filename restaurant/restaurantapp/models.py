@@ -22,7 +22,7 @@ class restaurant_details(models.Model):
 
 class dish(models.Model):
     name = models.CharField(max_length=200)
-    photo = models.ImageField(upload_to='dishimg/%y-%m-%d')
+    photo = models.ImageField(upload_to='templates/%y-%m-%d')
 
     def __str__(self):
         return self.name
@@ -31,7 +31,7 @@ class dish(models.Model):
 class rest_dish_map(models.Model):
     restaurant = models.ForeignKey(
         'restaurant_details', on_delete=models.CASCADE)
-    dishes = models.ManyToManyField('dish')
+    dishes = models.ManyToManyField(dish)
 
     def __str__(self):
         return f'{self.restaurant.Name} this hotel has {self.dishes.count()} dish'

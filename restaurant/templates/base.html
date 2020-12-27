@@ -20,9 +20,12 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
 
-                {%if user.isauthenticated%}
+                {%if user.is_authenticated%}
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Logout<span class="sr-only"></span></a>
+                    <a class="nav-link" href="#">Hello {{user}}<span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="{%url 'restaurantapp:logout'%}">Logout<span class="sr-only"></span></a>
                 </li>
                 {%else%}
                 <li class="nav-item active">

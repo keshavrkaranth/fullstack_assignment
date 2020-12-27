@@ -1,4 +1,27 @@
 {% extends 'base.html' %}
 {%block content%}
-<h2>Inside Homepage</h2>
+<br>
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {%for rest in details%}
+        <div class="col">
+            <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-success">{{rest.Name}} Hotel</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">Adress:</h5>
+                    <p class="card-text">{{rest.adress}}</p>
+                </div>
+                <div class="card-footer bg-transparent border-success">
+                    <a href="{%url 'restaurantapp:details' rest.id%}"><button
+                            class="btn btn-warning">Details</button></a>
+                </div>
+            </div>
+        </div>
+        {%endfor%}
+
+
+
+
+    </div>
+</div>
 {%endblock%}

@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout, authenticate
 from .forms import registrationForm, loginForm
 from .models import *
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -63,5 +64,23 @@ def user_login(request):
     return render(request, 'login.html', {'form': form, 'msg': context})
 
 
+def usr_logout(request):
+    logout(request)
+    return render(request, 'index.html')
+
+
+@login_required
 def log_home(request):
-    return render(request, 'home.html')
+    rest_det = restaurant_details.objects.all()
+    return render(request, 'home.html', {'details': rest_det})
+
+
+def rest_details(request, pk):
+    h = ''
+    rst_detail = restaurant_details.objects.get(pk=pk)
+    try:
+        details = rest_dish_map.objects.get(restaurant=rst_detail.id)
+        h = details.dishes.all()
+    except:
+        pass
+    return render(request, 'details.html', {'dishes': h})
